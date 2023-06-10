@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 10px;
+    
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    
+  }
+  
+  .search-container {
+    position: relative;
+  }
+  
+  #searchInput {
+    padding: 5px;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  /* Rest of the CSS styles */
+
+.sidenav {
+    height: 100%;
+    width: 215px;
+    position: fixed;
+    top: 76px;
+    left: 0;
+    padding-right: 60px;
+    color: blue;
+    overflow-x: hidden;
+    background-color: grey;
+    padding: 20px;
+    z-index: 1; /* Add z-index to ensure the side navbar appears above the movie container */
+  }
+  
+  #movieContainer {
+    display: grid;
+    background-color: black;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+    margin-left: 220px; /* Add left margin to account for the side navbar */
+  }
+  
+  /* Rest of the CSS styles */
+  
+  .sidenav a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .sidenav a:hover {
+    background-color: #ddd;
+  }
+  
+  
+  
+  .movieCard {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .movieCard img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .movieCard h2 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .movieCard p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #666;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+/* Rest of the CSS styles */
+#pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-link {
+  padding: 5px 10px;
+  background-color: #eee;
+  color: #333;
+  text-decoration: none;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.pagination-link:hover {
+  background-color: #ddd;
+}
+
+.pagination-link.active {
+  background-color: #333;
+  color: #fff;
+}
+
+#movieContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+  }
+  
+.movieCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Rest of the CSS styles */
+  .footer{
+    text-align: center;
+    color: #ddd;
+    background:brown;
+}
