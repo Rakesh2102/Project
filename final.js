@@ -1,4 +1,4 @@
-const apiKey = 'd271c71a3f1bc26e36d078a2fccd801b'; // Replace with your API key from themoviedb.org
+const apiKey = 'd271c71a3f1bc26e36d078a2fccd801b'; 
 
 
 // Open modal with movie description, release date, and IMDb rating
@@ -17,22 +17,21 @@ function openModal(movie) {
     modal.style.display = 'block';
   }
   
-// Close modal
-// Close modal
+
 function closeModal() {
     const modal = document.getElementById('movieDescriptionModal');
     modal.style.display = 'none';
   }
   
-  // Event listeners
+ 
   document.addEventListener('DOMContentLoaded', async () => {
-    // Rest of the code
+   
     
     const closeButton = document.getElementsByClassName('close')[0];
     closeButton.addEventListener('click', closeModal);
   });
   
-  // Rest of the code
+
   
 
 // Fetch popular movies
